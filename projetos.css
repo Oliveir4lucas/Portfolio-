@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(253, 253, 253);
+    margin: 0;
+   padding: 0;
+   width: 100%;
+ }
+ 
+ :root {
+    --cor--fundo: #141414;
+    --cor--hover: #2e2d2d;
+    --cor--primaria: #ffff;
+ }
+ 
+ .site-header {
+    background-image: url(1920menu2.png);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .site-header .logo {
+    font-size: 2em;
+    color: transparent;
+    order: 2; /*altera a ordem, colocando o logo à direita*/
+ }
+ 
+ .site-header .menu {
+    display: flex;
+    order: 1; /*mantém o meu menu à esquerda */
+ }
+ 
+ .site-header a {
+    color: var(--cor--primaria);
+    text-decoration: none;
+    padding: 8px;
+    margin: 0 10px;
+    transition: color 0.7s;
+ }
+ 
+ 
+ .menu ul {
+    list-style-type: none;
+    padding: 0;
+ }
+ 
+ .menu ul {
+    background-color: transparent;
+ }
+ 
+ .menu ul li {
+    display: inline-block; /* ou use float: left; */
+    position: relative;
+ }
+ 
+ .menu ul li a {
+    color: var(--cor--primaria);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5vh;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background 0.7s;
+ }
+ 
+ .menu ul li a:hover {
+    background-color: var(--cor--hover);
+    width: 150px;
+ }
+ 
+ .menu ul ul {
+    display: none;
+    left: 5px;
+    position: absolute;
+    background-color: #202020;
+    z-index: 3;
+    font-size: 3vh;
+ }
+ 
+ .menu ul li:hover ul {
+    display: block;
+ }
+ 
+ .menu ul ul li a {
+    color: var(--cor--primaria);
+ }
+ 
+ .menu ul ul {
+   width: 300px;
+}
+ 
+ .menu ul ul li a {
+    display: block;
+ }
+
+
+ h2{
+ display: none;
+}
+ /*divs*/
+ 
+h1{
+   color: #141414;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-align: center;
+   font-size: 50px;
+}
+
+
+.container {
+   display: flex;
+   flex-wrap: wrap; /* Permite que as divs se movam para a próxima linha se não houver espaço suficiente */
+   justify-content: space-around; /* Espaçamento uniforme entre as divs */
+}
+
+.img-container {
+   position: relative;
+   height: 500px; /* Ajuste a altura conforme necessário */
+   width: calc(25% - 20px); /* Calcula a largura para garantir 4 divs por linha com espaçamento */
+   margin: 10px; /* Espaçamento entre as divs */
+}
+
+.img-container img {
+   position: absolute;
+   width: 100%; /* Ajusta a largura para ocupar 100% da largura da div pai */
+   height: auto; /* Altura automática para manter a proporção da imagem */
+   display: block;
+   top: 50%; /* Ajuste a posição superior conforme necessário */
+   transform: translateY(-50%); /* Centraliza verticalmente */
+}

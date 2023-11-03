@@ -1,0 +1,109 @@
+body {
+    background-color:var(--cor--primaria);
+    margin: 0;
+   padding: 0;
+   width: 100%;
+ }
+ 
+ :root {
+    --cor--fundo: #141414;
+    --cor--hover: #2e2d2d;
+    --cor--primaria: #ffff;
+ }
+ 
+ .site-header {
+    background-image: url(1920menu2.png);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .site-header .logo {
+    font-size: 2em;
+    color: transparent;
+    order: 2; /*altera a ordem, colocando o logo à direita*/
+ }
+ 
+ .site-header .menu {
+    display: flex;
+    order: 1; /*mantém o meu menu à esquerda */
+ }
+ 
+ .site-header a {
+    color: var(--cor--primaria);
+    text-decoration: none;
+    padding: 8px;
+    margin: 0 10px;
+    transition: color 0.7s;
+ }
+ 
+ 
+ .menu ul {
+    list-style-type: none;
+    padding: 0;
+ }
+ 
+ .menu ul {
+    background-color: transparent;
+ }
+ 
+ .menu ul li {
+    display: inline-block; /* ou use float: left; */
+    position: relative;
+ }
+ 
+ .menu ul li a {
+    color: var(--cor--primaria);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5vh;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background 0.7s;
+ }
+ 
+ .menu ul li a:hover {
+    background-color: var(--cor--hover);
+    width: 150px;
+ }
+ 
+ .menu ul ul {
+    display: none;
+    left: 5px;
+    position: absolute;
+    background-color: #202020;
+    z-index: 3;
+    font-size: 3vh;
+ }
+ 
+ .menu ul li:hover ul {
+    display: block;
+ }
+ 
+ .menu ul ul li a {
+    color: var(--cor--primaria);
+ }
+ 
+ .menu ul ul {
+    width: 300px;
+ }
+ 
+ .menu ul ul li a {
+    display: block;
+ }
+
+ .foto{
+   position: relative;
+   height: 750px;
+   display: block;
+   color: transparent;
+ }
+
+ .foto img{
+ width: 190vh;
+   position: absolute;
+   margin-left: 5vh;
+   margin-right: 5vh;
+   top: auto;
+ }
